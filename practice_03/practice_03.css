@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Microsoft YaHei';
+}
+.main_container{
+	border: 1px solid #999;
+	background-color: #eee;
+	padding: 20px;
+	margin: 20px;
+		overflow: auto;
+}
+
+.left{
+	float: left;
+	border: 1px solid #999;
+	width: 158px;
+	padding: 20px;
+	background: #fff;
+}
+.logo{
+	float: left;
+
+}
+.left p{
+	font-weight:bold;
+	font-size: 16px;
+	color: #000; 
+	text-align: center;
+}
+.right{
+	float: right;	
+	border:  1px solid #999;
+	background: #fff;
+	width: 120px;
+}
+.right img{
+  border: 1px solid #999;
+  display: block;
+  margin: 20px;
+}
+.middle{
+	border: 1px solid #999;
+	margin:0 160px 0 220px;
+	padding: 20px;
+	background: #FFF;
+}
+.middle p{
+	font-size: 14px;		
+	line-height: 1.6;		
+}
+.poem{
+	text-align: center;
+	margin: 10px 0 0 0;
+}
