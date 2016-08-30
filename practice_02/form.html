@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport"  content="width=device-width initial-scale=1" >
+		<title>表单练习</title>
+
+		<style type="text/css">
+			*{
+				margin: 0;padding: 0;
+			}
+			body{
+				font-family: 'Microsoft YaHei';
+				background-color: #dedede;
+			}
+			aside{
+				display: block;
+				background:#FFF;
+				margin: 30px;
+				padding: 30px;
+				box-shadow: 1px 1px 2px 1px #848484;
+			}
+			aside h4{
+				height: 40px;
+				line-height: 40px;
+				padding-left: 10px;
+				border-left: 3px solid #888;
+				color: #888;
+			}
+			aside form div{
+				font-size: 14px;
+				margin: 15px 0;
+			}
+			aside form div .tips{
+				float: left;
+				text-align: right;
+				width: 35%;
+				padding-right: 15px;
+			}
+			aside form div p{
+				font-size: 12px;
+				margin-left: 35%;
+				padding-left: 15px;
+				color: #aaa;
+			}
+			aside textarea{
+			    width:50%;
+			    height:100px;
+			}
+			aside .submitButton{
+				width: 100%;
+				height: 40px;
+				border-radius: 5px;
+				border:none;
+		    	color:white;
+	    		font-size: 18px;
+		    	background: #128fdc;
+			}
+			aside .submitButton:hover{
+			    background: #0063dc;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+
+	<!--<aside>标签可以用于文章的侧栏-->
+	<aside>
+		
+		<h4>这里是一个侧栏，这是侧栏的标题</h4>
+
+		<form action="" method="post">
+			<div>
+				<!-- <label>元素为鼠标用户改善了可用性，当用户点击label元素内的文本时会切换到空间本身。-->
+				<label class="tips" for="address">请输入邮箱的地址</label>
+				<input type="text" name="address" placeholder="邮箱">
+				<p>邮箱地址请按照要求格式输入</p>
+			</div>
+
+			<div>
+				<label class="tips" for="password">请输入密码</label>
+				<input type="password" name="password" placeholder="密码">
+			</div>
+
+			<div>
+				<label class="tips" for="password">请重复输入密码</label>
+				<input type="password" name="password" placeholder="密码">
+				<p>请重复输入密码</p>
+			</div>
+		</form>
+
+		<form action="" method="post">
+			<div>
+				<label class="tips">性别</label>
+				<!--value提交数据到服务器的值；checked默认被选中-->
+				<input type="radio" value="male" name="sex" checked="checked" >
+				<label>男</label>
+				<input type="radio" value="female" name="sex" >
+				<label>女</label>
+			</div>
+		</form>
+
+		<form action="" method="post">
+			<div>
+				<label class="tips" for="citys">城市</label>
+					<select name="citys">
+		                <option value="北京">北京</option>
+		                <option value="西安" selected="selected">西安</option>
+		                <option value="广州">广州</option>
+					</select>
+			</div>
+		</form>
+
+		<form action="" method="post">
+			<div>
+				<label class="tips" for="hobby">爱好</label>
+				<input type="checkbox" value="sport" name="hobby"><label>运动</label>
+				<input type="checkbox" value="art" name="hobby"><label>艺术</label>
+				<input type="checkbox" value="science" name="hobby"><label>科学</label>
+			</div>
+		</form>
+
+		<form action="" method="">
+			<div>
+				<label class="tips" for="introduce">个人描述</label>
+				<textarea  row="3" cols="20">这是一个多行输入框</textarea>
+			</div>
+		</form>
+		<input type="button" class="submitButton" value="确认提交" > 
+	</aside>
+
+	</body>
+</html>
+
+
