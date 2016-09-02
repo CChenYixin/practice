@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: #7c7c7c;
+	font-family: 'Microsoft YaHei';
+}
+.container{
+	height: 1368px;
+	width: 892px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0 44px;	
+}
+
+/*网页header*/
+
+header{
+	position: relative;
+}
+
+header .tag{
+	height: 61px;
+	width: 110px;
+	background-color: #d45d5c;
+	position: relative;
+}
+header .tag p{
+	font-size: 12px;
+	color: #fff;
+	font-family:SimHei;
+	bottom: 2px;
+	left: 4px;
+	position: absolute;
+}
+header p{
+	font-size: 12px;
+	font-family:SimHei;
+	color: #d45d5c;
+	right: 0px;
+	bottom: 5px;
+	position: absolute;
+}
+header hr{
+	border: 2px  #938e8c solid;
+}
+
+/*网页top*/
+
+.top{
+	position: relative;
+	margin: 30px 0;
+}
+.top .left{
+	width: 641px;
+	height: 301px;
+	float: left;
+}
+.cover_left{
+	height: 301px;
+	width: 191px;
+	position: absolute;
+	background-color: green;
+	opacity:0.2;
+	top: 0;
+}
+.cover_right{
+	height: 301px;
+	width: 191px;
+	position: absolute;
+	background-color: red;
+	opacity:0.2;
+	top: 0;
+	right: 341px;
+}
+.top aside{
+	position: absolute;
+	width: 203px;
+	height: 300px;
+	right:0;
+	top: 0;
+}
+.top hr{
+	border: 2px  #cc8091 solid;
+
+}
+.top h2{
+	font-size: 24px;
+	color: #000000;
+	line-height: 40px;
+	text-decoration: underline;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+.top .com{
+	font-size: 12px;
+	color: #676767;
+	font-style: oblique;
+	font-family: 楷体;
+
+}
+.top .seven{
+	font-size: 116px;
+	color: #75b86b;
+	font-style: oblique;
+	margin-left: -18px;
+}
+.top .num{
+    font-size: 55px;
+    color: #cc8091;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
+.top .text_1{
+	font-size: 21px;
+    color: #cc8091;
+    position: absolute;
+    bottom: 10px;
+    left: 85px;
+}
+.top .text_2{
+    font-size: 12px;
+    color: #ccc;
+    position: absolute;
+    bottom: 0px;
+    left: 85px;
+}
+
+	
+/*网页middle*/
+
+.middle{
+	width: 641px;
+}
+.middle h2{
+    height: 28px;
+    font-size: 16px;
+    color: #418c59;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.middle .what{
+	float: left;
+	width: 210px;
+    margin-right: 20px;
+}
+
+.middle .when{
+	float: left;
+   	width: 210px;
+    margin-right: 20px;
+
+}
+.middle .how{
+	float: left;
+    width: 140px;
+    margin-right: 20px;
+}
+.middle p{
+    font-size: 12px;
+    color: #767777;
+    line-height: 16px;
+    font-family: "宋体";
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.middle ul{
+	list-style: none;
+    font-size: 12px;
+    color: #231815;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+.midddle ul li{
+	margin-bottom: 15px;
+}
+
+.middle ul li span {
+    font-size: 12px;
+    color: #cd4a48;
+    font-style: oblique;
+    line-height: 16px;
+    opacity: 0.7;
+}
+
+/*网页bottom*/
+
+.bottom{
+	width: 892px;
+	clear: both;
+}
+.bottom .left{
+	float: left;
+	width: 415px;
+}
+.left_top{
+    width: 415px;
+    border-bottom: 2px solid #11456b;
+}
+.left_top p{
+    font-size: 42px;
+    line-height: 50px;
+    font-family: "黑体";
+    color: #11456b;
+    font-weight: bold;
+}
+.left_top span{
+	font-size: 72px;
+    color: #f5e327;
+    font-family: "黑体";
+    font-weight: bold;
+    font-style: oblique;
+}
+.left_bottom{
+	padding: 10px 0px;
+    margin-top: 20px;
+    position: relative;
+}
+.left_bottom p{
+    font-size: 12px;
+    color: #767777;
+    font-family: "宋体";
+    line-height: 16px;
+    text-align: justify;
+}
+.left_bottom span{
+    font-size: 70px;
+    color: #f5e327;
+    float: left;
+    padding: 10px 10px 10px 0;
+}
+.left_bottom img{
+    float: right;
+    margin: 10px 0px 10px 10px;
+}
+.bottom .right{
+    float: right;
+    width: 458px;
+    height: 637px;
+}
+.right_top{
+    width: 458px;
+    height: 275px;
+    position: relative;
+}
+.right .title{
+    width: 458px;
+    height: 61px;
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 18px;
+}
+.title p{
+    color: #fff;
+    font-size: 26px;
+    font-family: "微软雅黑";
+    margin-left: 50px;
+    line-height: 44px;
+    border-left: 3px solid #72b16a;
+    height: 44px;
+    margin-top: 10px;
+    text-indent: 0.5em;
+}
+ .title span{
+    font-size: 12px;
+    color: #72b16a;
+    font-family: "微软雅黑";
+    font-style: oblique;
+    line-height: 140%;
+    margin-left: 5px;
+}
+.right_bottom{
+    width: 458px;
+    height: 318px;
+    background: #eeeed6;
+    margin-top: 18px;
+    position: relative;
+}
+
+.b_1 ul{
+    list-style: none;
+    font-size: 12px;
+    color: #231815;
+    line-height: 16px;
+    font-family: "微软雅黑";
+}
+.b_1 ul li{
+    font-size: 16px;
+    color: #5a5b5b;
+    font-family: "宋体";
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+.b_1 ul span{
+	font-size: 12px;
+    font-family: 宋体;
+    font-style: oblique;
+    text-align: right;
+    line-height: 20px;
+    color: rgb(90, 91, 91);
+}
+
+.b_2{
+    width: 260px;
+    height: 160px;
+    background: #d55d5c;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+}
+.b_2 .zero{
+	float: left;
+    font-size: 110px;
+    color: rgb(255, 255, 255);
+    height: 86px;
+    line-height: 86px;
+    border-right: 2px solid rgb(255, 255, 255);
+    margin: 37px 10px;
+}
+.b_2 .num{
+    margin-top: 37px;
+    font-size: 21px;
+    font-family: "黑体";
+    font-style: oblique;
+    line-height: 24px;
+}
+
+.b_2  .text{
+	font-size: 10px;
+    font-family: "黑体";
+    line-height: 10px;
+}
+
+.b_3{
+    font-size: 14px;
+    color: #5a5b5b;
+    font-family: "黑体";
+    font-style: oblique;
+    line-height: 16px;
+    text-indent: 3em;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 178px;
+    height: 160px;
+    margin-right: 10px;
+}
+.b_3 span{
+    font-size: 72px;
+    color: #d45d5c;
+    font-family: "黑体";
+    line-height: 30px;
+}
+.b_3 .top{
+    position: absolute;
+    bottom: 110px;
+    right: 140px;
+    font-style: normal;
+}
+.b_3 .bottom{
+    position: absolute;
+    bottom: 45px;
+    left: 50px;
+    font-style: normal;
+}
+
+
+/*网页footer*/
+
+footer{
+    clear: both;
+    margin: 0 auto;
+    width: 892px;
+    height: 59px;
+    border-top: 1px solid #938e8c;
+}
+footer p{
+    float: right;
+    font: 12px "黑体";
+    color: #d45d5c;
+}
