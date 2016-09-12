@@ -159,3 +159,36 @@ header{
     background: #E31212;
     border-radius: 5px;
 }
+
+
+/*网页section_2*/
+
+#section_2{
+	width: 100%;
+	height: 240px;
+}
+#section_2 .cell{
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+#section_2 img{
+	position: relative;
+	top: 50px;
+}
+#section_2 p{
+	position: relative;
+	top: 80px;
+	font-size: 13px;
+	color: #534141;
+	border-right: 2px solid #534141;
+}
+#section_2 .cell:last-child p{
+    border: none;
+}
+#section_2 .cell:hover p{
+    color: #BE4F48;
+    cursor: pointer;
+}
