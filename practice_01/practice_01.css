@@ -154,6 +154,7 @@ aside form div {
 }
 
 aside form div .tips {
+    /* 设置label的宽度，让label浮动，右对齐，设置的padding-right的大小和下面提示文字的padding-left相等 */
     float: left;
     text-align: right;
     width: 35%;
@@ -161,6 +162,7 @@ aside form div .tips {
 }
 
 aside form div p {
+    /* margin-left与label标签的宽度一样，设置的padding-left的大小和上面label的padding-right相等 */
     margin-left: 35%;
     padding-left: 15px;
     font-size: 12px;
