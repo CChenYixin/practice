@@ -9,7 +9,7 @@
     <![endif]-->
     <title>practice_03</title>
     <style type="text/css">
-        /*三栏布局之绝对定位法*/
+        /*三栏布局之浮动法*/
 
         * {
             margin: 0;
@@ -26,20 +26,16 @@
             padding: 20px;
             border: 1px solid #999;
             background-color: #eee;
-            position: relative;
             overflow: auto;
         }
 
-        .left,
-        .right {
-            position: absolute;
-            border: 1px solid #999;
-            top: 20px;
-        }
-
         .left {
+            float: left;
+            position: relative;
             width: 200px;
+            border: 1px solid #999;
             left: 20px;
+            background-color: #fff;
         }
 
         .left img {
@@ -57,8 +53,10 @@
         }
 
         .right {
+            float: right;
+            position: relative;
             width: 120px;
-            right: 20px;
+            border: 1px solid #999;
         }
 
         .right img {
@@ -72,8 +70,6 @@
             margin: 0 160px 0 240px;
             padding: 20px;
             background-color: #fff;
-            height: 400px;
-            overflow: auto;
         }
 
         .middle p {
@@ -84,11 +80,17 @@
 </head>
 
 <body>
-    <!--三栏布局之绝对定位法-->
+    <!--三栏布局之浮动法-->
     <section class="container">
         <div class="left">
             <p>团队名称</p>
             <img src="image/1.png" alt="团队logo">
+        </div>
+        <div class="right">
+            <img src="image/1.png" alt="个人logo">
+            <img src="image/1.png" alt="个人logo">
+            <img src="image/1.png" alt="个人logo">
+            <img src="image/1.png" alt="个人logo">
         </div>
         <article class="middle">
             <p>地球三体叛军并非铁板一块，它的内部有着复杂的派别和分支，主要分为两部分：</p>
@@ -96,12 +98,6 @@
             <p>拯救派：这是在三体叛军出现相当长的时间后才产生的一个派别，它本质上是一个宗教团体，由三体教的教徒组成。</p>
             <p>人类之外的另一个文明，对于高级知识阶层无疑具有巨大的吸引力，并使他们极易对其产生种种美好的幻想。对于人类这样一个幼稚的文明，更高等的异种文明产生的吸引力几乎是不可抗拒的。有一个不太恰当的比喻：人类文明一直是一个孤独行走于宇宙荒漠中的不谙世事的少年，现在她（他）知道了另一个异性的存在，虽然看不到他（她）的面容和身影，但知道他（她）就在远方，对他（她）的美好想象便如同野火般蔓延。渐渐地，随着对那个遥远文明的想象越来越丰富，拯救派在精神上对三体文明产生了宗教感情，人马座三星成了太空中的奥林匹斯山，那是神的住所，三体教由此诞生。与人类的其他宗教不同，三体教崇拜着一个真实存在的对象；与其他宗教相反，处于危难中的是主，而负有拯救责任的是信徒。</p>
         </article>
-        <figure class="right">
-            <img src="image/1.png" alt="个人logo">
-            <img src="image/1.png" alt="个人logo">
-            <img src="image/1.png" alt="个人logo">
-            <img src="image/1.png" alt="个人logo">
-        </figure>
     </section>
 
 </body>
