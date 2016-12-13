@@ -1,185 +1,211 @@
-*{
-	margin: 0;padding: 0;
-}
-body{
-	font-family: 'Microsoft YaHei';
-	background-color: #dedede;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/*网页banner*/
+body {
+    font-family: 'Microsoft YaHei';
+    background-color: #dedede;
+}
 
-header{
-	position: relative;
-	height: 60px;
-	background: #333;
+
+/*网页header*/
+
+header {
+    position: relative;
+    height: 60px;
+    background-color: #333;
 }
-header h1{
-	color: #FFF;
-	padding-left: 10px;
-	line-height: 60px;
-	vertical-align: middle;
+
+h1 {
+    padding-left: 10px;
+    vertical-align: middle;
+    color: #fff;
 }
-header ul{
-	position: absolute;
-	top: 0; 
-	right: 10px;
+
+header ul {
+    position: absolute;
+    top: 0;
+    right: 10px;
 }
-header ul li{
-	display:block;
-	float: left;
-	text-align: center;
-	width:100px;
-	padding: 20px 10px;
+
+header ul li {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100px;
+    padding: 20px 10px;
 }
-header ul li a{
-	text-decoration: none;
-	color: #FFF;
-	font-size: 14px;
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
 }
 
 
 /*网页主体main*/
 
+main {
+    margin-right: 440px;
+}
 
-article,aside{
-	display: block;
-	background:#FFF;
-	margin: 30px;
-	padding: 30px;
-	box-shadow: 1px 1px 2px 1px #848484;
+article, aside {
+    display: block;
+    margin: 30px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 1px #848484;
 }
-article h2{
-	padding: 5px 0;
+
+h2 {
+    padding: 5px 0;
 }
-article h3{
-	padding: 10px 0;
-	color: #888;
-	font-size: 16px;
+
+h3 {
+    padding: 10px 0;
+    color: #888;
+    font-size: 16px;
 }
-.auther, .aTime{
-	line-height: 20px;
-	font-size: 12px;
-	color: #888; 
+
+article p {
+    text-indent: 2em;
+    padding: 5px;
 }
-article a{
-    color:#39F;
+
+.author, .time {
+    line-height: 20px;
+    color: #888;
+    font-size: 12px;
 }
-article a:hover{
-    color:#F30;
+
+article a {
+    color: #39f;
 }
-article p{
-	text-indent: 2em;
-	padding: 5px;
+
+article a:hover {
+    color: #f30;
 }
-article img{
-	padding: 10px 0;
+
+img {
+    padding: 10px 0;
+    border-radius: 15px;
 }
-article ul li{
-	list-style-type: none;/*去除无序列表前的点*/
-	text-indent: 2em;
+
+article ul li {
+    list-style-type: none;
+    text-indent: 2em;
 }
-article dl{
+
+figure {
+    width: 200px;
+    margin: 15px;
+    border: 1px solid #ccc;
 }
-article dl dd{
-    width:200px;
-    margin:15px;
-    border:1px solid #ccc;
-    display: inline-block;
-    text-align:center;
+
+figcaption {
+    display: block;
+    text-align: center;
+    margin: 5px;
+    font-size: 12px;
 }
-article dl dd span{
-    display:block;
-    font-size:12px;
-    margin:5px;
+
+figure img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 5px;
+    width: 150px;
 }
-article dl dd img{
-    width:70%;
+
+article ol {
+    text-indent: 1em;
+    margin: 10px 0px 10px 50px;
 }
-article ol{
-	text-indent: 1em;
-	margin: 10px 20px;
+
+article table {
+    width: 100%;
+    border-collapse: collapse;
 }
-article table{
-	width: 100%;
-	border-collapse:collapse;/*边框会合并为一个单一的边框*/
+
+article table tr th {
+    text-align: left;
+    color: #fff;
+    background-color: #000;
 }
-article table tr th{
-	color: #FFF;
-	background: #000;
-	text-align: left;
+
+article table tr td {
+    border: 1px solid #888;
 }
-article table tr td{
-	border:1px solid #888;
-}
-article table .buttomTable{
-    background:#ccc;
+
+article table .buttomTable {
+    background-color: #ccc;
     font-weight: bold;
 }
 
 
-/*网页侧栏*/
+/* 网页侧栏aside */
 
-main{
-	margin-right: 440px;
+aside {
+    float: right;
+    width: 350px;
 }
 
-aside{
-	float: right;
-	width: 350px;
+aside h4 {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-left: 3px solid #888;
 }
 
-
-aside h4{
-    height:40px;
-    line-height:40px;
-    padding-left:10px;
-    border-left:3px solid #888;
-}
-aside form div{
+aside form div {
     font-size: 14px;
-    margin:15px 0;
+    margin: 15px 0;
 }
 
-aside form div .tips{
-    float:left;           /*添加后个人描述四个字才和文本域上对齐*/
-    text-align:right;
-    width:35%;
-    padding-right:15px;
+aside form div .tips {
+    /* 设置label的宽度，让label浮动，右对齐，设置的padding-right的大小和下面提示文字的padding-left相等 */
+    float: left;
+    text-align: right;
+    width: 35%;
+    padding-right: 15px;
 }
-aside form div p{
-    margin-left:35%;
-    padding-left:15px;
-    font-size:12px;
+
+aside form div p {
+    /* margin-left与label标签的宽度一样，设置的padding-left的大小和上面label的padding-right相等 */
+    margin-left: 35%;
+    padding-left: 15px;
+    font-size: 12px;
     color: #aaa;
 }
-aside textarea{
-    width:50%;
-    height:100px;
 
+aside textarea {
+    width: 50%;
+    height: 100px;
 }
-aside .submitButton{
-    width:100%;
-    height:40px;
+
+aside .submitButton {
+    width: 100%;
+    height: 40px;
+    border: none;
     border-radius: 10px;
-    background: #128fdc;
     color: white;
-    font-size: 19px;
-    border:none;
+    background-color: #128fdc;
+    font-size: 20px;
 }
-aside .submitButton:hover{
+
+aside .submitButton:hover {
     background: #0063dc;
-
 }
 
 
-/*网页footer*/
+/* 页脚footer */
 
-footer{
-    width:100%;
-    height:50px;
-    background:black;
-    color:white;
-    text-align:center;
-    line-height:50px;
-    font-size:14px;
+footer {
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
 }
