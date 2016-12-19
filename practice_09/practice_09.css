@@ -23,8 +23,9 @@ header img {
 }
 
 header input {
-    margin-left: 35%;
-    padding-left: 40px;
+    position: absolute;
+    left: 60%;
+    top: 16px;
     width: 310px;
     height: 24px;
     line-height: 24px;
@@ -33,6 +34,13 @@ header input {
     background-repeat: no-repeat;
     background-position: 15px 5px;
     outline: none;
+}
+
+header .log {
+    position: absolute;
+    display: inline-block;
+    right: 18%;
+    top: 0;
 }
 
 header i {
