@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>practice_10</title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container [class*='box']:not(.box4) {
+            border: 1px solid red;
+            margin-bottom: 10px;
+            width: 150px;
+        }
+
+        .box1 {
+            height: 120px;
+        }
+
+        .box2 {
+            height: 100px;
+        }
+
+        .box3 {
+            height: 40px;
+        }
+
+        .box4 {
+            height: 200px;
+            width: 150px;
+            border: 1px solid blue;
+            margin-bottom: 10px;
+            width: 150px;
+        }
+
+        @media (max-width:639px) {
+            .box1 {
+                height: 120px;
+            }
+            .box2 {
+                height: 100px;
+            }
+            .box3 {
+                height: 40px;
+            }
+            .box4 {
+                order: -1;
+                height: 200px;
+                width: 150px;
+                border: 1px solid blue;
+                margin-bottom: 10px;
+                width: 150px;
+            }
+            .container {
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+</body>
+
+</html>
