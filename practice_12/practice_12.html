@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0，">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>practice_12</title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .table,
+        .box,
+        .box2 {
+            width: 500px;
+            height: 500px;
+            margin: 20px auto;
+            border: 1px solid #676767;
+        }
+
+        .table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table table {
+            border-collapse: collapse;
+        }
+
+        .table table,
+        td,
+        th {
+            border: 2px solid white;
+        }
+
+        td,
+        th {
+            padding: 3px;
+        }
+
+        th {
+            text-align: left;
+            color: #fff;
+            background-color: black;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(-n+3) td {
+            color: red;
+        }
+
+        .box,
+        .box2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .box input {
+            width: 100px;
+            height: 18px;
+            transition: width .5s ease-in-out;
+        }
+
+        .box input:focus {
+            width: 200px;
+            box-shadow: 0 0 10px rgba(35, 173, 255, 1);
+        }
+
+        .box2 .slider {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .box2 .slider .banner {
+            width: 300%;
+            height: 100%;
+            font-size: 0;
+            position: relative;
+            left: 0;
+            transition: .5s left ease-in-out;
+            word-spacing: 0;
+            letter-spacing: 0;
+        }
+
+        .box2 .slider ul li {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            list-style: none;
+        }
+
+        .box2 .slider ul li:nth-child(1) {
+            background-color: red;
+        }
+
+        .box2 .slider ul li:nth-child(2) {
+            background-color: green;
+        }
+
+        .box2 .slider ul li:nth-child(3) {
+            background-color: blue;
+        }
+
+        .box2 .tag {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .box2 .tag a {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            background-color: #f2f2f2;
+            opacity: .5;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        #img1:target~.banner {
+            left: 0;
+        }
+
+        #img2:target~.banner {
+            left: -100%;
+        }
+
+        #img3:target~.banner {
+            left: -200%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>网站</th>
+                    <th>热度</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>百度前端技术学院</td>
+                    <td>13000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>百度前端技术学院</td>
+                    <td>12000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>百度前端技术学院</td>
+                    <td>11000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>百度前端技术学院</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>百度前端技术学院</td>
+                    <td>9000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>百度前端技术学院</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>百度前端技术学院</td>
+                    <td>7000</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>百度前端技术学院</td>
+                    <td>6000</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>百度前端技术学院</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>百度前端技术学院</td>
+                    <td>4000</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <div class="box">
+        <input type="text" name="" value="">
+    </div>
+    <div class="box2">
+        <div class="slider">
+            <span id="img1"></span>
+            <span id="img2"></span>
+            <span id="img3"></span>
+            <ul class="banner">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="tag">
+                <a href="#img1">1</a>
+                <a href="#img2">2</a>
+                <a href="#img3">3</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
