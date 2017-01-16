@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>practice_18</title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 800px;
+            margin: 30px auto;
+            font-size: 14px;
+            font-family: "微软雅黑";
+        }
+
+        input {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        #btncontainer {
+            display: inline-block;
+        }
+
+        button {
+            width: 60px;
+            background-color: #4caf50;
+            color: #fff;
+            border-style: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .numClass {
+            display: inline-block;
+            text-align: center;
+            background-color: pink;
+            margin: 3px;
+            padding: 2px;
+        }
+
+        button:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 16px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="numinput">
+    <div id="btncontainer">
+        <button type="button" id="leftin">左侧入</button>
+        <button type="button" id="rightin">右侧入</button>
+        <button type="button" id="leftout">左侧出</button>
+        <button type="button" id="rightout">右侧出</button>
+    </div>
+    <div id="numcontainer"></div>
+    <script src="demo.js"></script>
+</body>
+
+</html>
