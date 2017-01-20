@@ -20,6 +20,7 @@ var arrNum =[];
 
 //生成随机数组
 function randomBulidData(){
+    arrNum = [];
     for (var i =0;i<60;i++){
         var num = Math.ceil(Math.random()*91+9);
         arrNum.push(num);
@@ -95,39 +96,21 @@ function btnRightrOut(){
     }
 }
 //排序算法
-// function bubbleSort(){
-//         var swapSignal = true ;
-//         while(swapSignal){
-//             swapSignal = false;
-//             for(i = 0; i <arrNum.length-1;i++){
-//                 if(arrNum[i]>arrNum[i+1]){
-//                     var temp = arrNum[i];
-//                     arrNum[i] = arrNum[i+1];
-//                     arrNum[i+1] = temp;
-//                     swapSignal = true;
-//                     renderNums();
-//             }
-//         }
-//     }
-// }
-function bubbleSort() {
-    var i = 0,j = 1,temp;
-            len = arrNum.length;
-            timer = null;
-    timer = setInterval(run,25);
-    function run() {
-        if (i < len) {
-            if (j < len) {
-                if (arrNum[i] > arrNum[j]) {
-                    temp = arrNum[i];
-                    arrNum[i] = arrNum[j];
-                    arrNum[j] = temp;
+function visual(){
+    var timer = null;
+    timer = setInterval(bubbleSort,25);
+    function bubbleSort(){
+        var swapSignal = true;
+        if(swapSignal){
+            swapSignal = false;
+            for(i = 0; i <arrNum.length-1;i++){
+                if(arrNum[i]>arrNum[i+1]){
+                    var temp = arrNum[i];
+                    arrNum[i] = arrNum[i+1];
+                    arrNum[i+1] = temp;
+                    swapSignal = true;
                     renderNums();
                 }
-                j++;
-            } else {
-                i++;
-                j = i + 1;
             }
         } else {
             clearInterval(timer);
@@ -135,6 +118,31 @@ function bubbleSort() {
         }
     }
 }
+// function bubbleSort() {
+//     var i = 0,j = 1,temp;
+//             len = arrNum.length;
+//             timer = null;
+//     timer = setInterval(run,10);
+//     function run() {
+//         if (i < len) {
+//             if (j < len) {
+//                 if (arrNum[i] > arrNum[j]) {
+//                     temp = arrNum[i];
+//                     arrNum[i] = arrNum[j];
+//                     arrNum[j] = temp;
+//                     renderNums();
+//                 }
+//                 j++;
+//             } else {
+//                 i++;
+//                 j = i + 1;
+//             }
+//         } else {
+//             clearInterval(timer);
+//             return;
+//         }
+//     }
+// }
 
 //添加点击事件
 function btnClick(){
@@ -143,7 +151,7 @@ function btnClick(){
     addEvent($('leftout'),'click',btnLeftOut);
     addEvent($('rightout'),'click',btnRightrOut);
     addEvent($('randomdata'),'click',randomBulidData);
-    addEvent($('sort'),'click', bubbleSort);
+    addEvent($('sort'),'click', visual);
 }
 
 //输出数字
