@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>practice_20</title>
+    <style media="screen">
+        * {
+            margin: 20;
+            padding: 0;
+        }
+
+        #result {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        #result div {
+            background-color: pink;
+            height: 30px;
+            line-height: 30px;
+            min-width: 30px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #result span {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ctrl">
+        <textarea rows="10" cols="50" placeholder="请输入字符并用不同符号分隔" id="content"></textarea>
+        <button id="insert">插入</button>
+        <button id="search">查询</button>
+        <input type="text" id="searchInput">
+    </div>
+    <div id="result"></div>
+    <script src="demo.js"></script>
+</body>
+
+</html>
