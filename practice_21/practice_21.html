@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>practice_21</title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: '微软雅黑';
+        }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            width: 320px;
+            border: 1px solid #222;
+        }
+
+        label {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .tag,
+        .hobby {
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid #999;
+            border-radius: 3px;
+        }
+
+        #tag_input {
+            width: 200px;
+            height: 18px;
+            transition: width .5s ease-in-out;
+        }
+
+        #tag_input:focus {
+            width: 250px;
+            border-style: none;
+            box-shadow: 0 0 5px rgba(35, 173, 255, 1);
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            margin: 10px 10px 0 10px;
+            border-radius: 3px;
+        }
+
+        .numClass {
+            display: inline-block;
+            text-align: center;
+            background-color: pink;
+            margin: 3px;
+            padding: 2px;
+        }
+
+        button {
+            width: 300px;
+            height: 30px;
+            margin: 10px 0 10px 10px;
+            color: #000;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: #fff;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="input">Tag:</label>
+        <input type="text" id="tag_input" placeholder="输入标签后按回车添加">
+        <div class="tag" id="tag_list"></div>
+        <textarea id="hobby_input" rows="8" cols="40" placeholder="输入您的兴趣爱好"></textarea>
+        <button id="button">确认兴趣爱好</button>
+        <div class="hobby" id="hobby_list"></div>
+    </form>
+    <script src="demo1.js"></script>
+</body>
+
+</html>
