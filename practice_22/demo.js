@@ -40,7 +40,7 @@ window.onload = function(){
 
 //前序
 function preOrderRec(node){
-    if(!(node === null)){
+    if(node){
         divList.push(node);
         preOrderRec(node.firstElementChild);
         preOrderRec(node.lastElementChild);
@@ -48,7 +48,7 @@ function preOrderRec(node){
 }
 //中序
 function inOrderRec(node){
-    if(!(node === null)){
+    if(node){
         inOrderRec(node.firstElementChild);
         divList.push(node);
         inOrderRec(node.lastElementChild);
@@ -56,7 +56,7 @@ function inOrderRec(node){
 }
 //后序
 function postOrderRec(node){
-    if(!(node === null)){
+    if(node){
         postOrderRec(node.firstElementChild);
         postOrderRec(node.lastElementChild);
         divList.push(node);
