@@ -85,3 +85,8 @@ a {
     opacity: 1;
     transition: opacity .5s ease-in-out;
 }
+
+.undone {
+    text-decoration: line-through;
+    color: #888;
+}
