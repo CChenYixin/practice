@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    height: 2000px;
+}
+
+#btnLogin {
+    width: 200px;
+    height: 50px;
+    margin: 50px;
+    outline: none;
+    color: #fff;
+    background-color: #2f79ba;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#btnLogin:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #e60505;
+}
+
+#divFloat {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;*/
+    /*transform: translate(-50%, -50%) scale(1, 1);*/
+    width: 400px;
+    height: 250px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+#divFloat h1 {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#divFloat h1::after {
+    content: "";
+    position: absolute;
+    left: 3%;
+    display: block;
+    width: 94%;
+    height: 1px;
+    background-color: #000;
+}
+
+#divFloat p {
+    text-align: left;
+    padding: 20px 20px 0 20px;
+    height: 100px;
+    /*border: 1px solid #fff;*/
+}
+
+#divFloat form {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#divFloat form input {
+    width: 50px;
+    height: 30px;
+    outline: none;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#divFloat form input:first-child {
+    background-color: #2f79ba;
+}
+
+#divFloat form input:last-child {
+    background-color: #e60505;
+}
+
+#divFloat form input:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
